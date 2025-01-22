@@ -2,20 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Universal Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-bg_black text-fg_white; /* Using Tailwind classes for background and foreground */
+  font-family: 'Inter', sans-serif; /* Clean, geometric sans-serif font */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold for emphasis */
+  text-transform: uppercase; /* Adds sharp, blocky look */
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  @apply text-accent_1; /* Strong accent color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Simple, bold interaction */
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.button {
+  @apply bg-accent_1 text-bg_black; /* Background and text using Tailwind classes */
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  @apply bg-fg_white text-accent_1; /* Inverted colors for hover */
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent_1; /* Accent color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-fg_white; /* Hover color */
+}
+
+/* Utility Classes */
+.accent {
+  @apply text-accent_1;
+}
+
+.bg-accent {
+  @apply bg-accent_1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
 }
