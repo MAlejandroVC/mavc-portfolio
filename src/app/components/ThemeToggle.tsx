@@ -26,12 +26,20 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="px-4 py-2 bg-bg-primary text-text-primary border border-border-default"
-    >
-      {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
-    </button>
+    <div className="flex items-center justify-center">
+      <button
+        onClick={toggleTheme}
+        className={`w-14 h-8 flex items-center rounded-full p-1 transition-colors duration-300 ${
+          theme === 'dark' ? 'bg-gray-800' : 'bg-gray-300'
+        }`}
+      >
+        <div
+          className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+            theme === 'dark' ? 'translate-x-6' : 'translate-x-0'
+          }`}
+        ></div>
+      </button>
+    </div>
   );
 };
 
