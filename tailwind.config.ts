@@ -13,8 +13,7 @@ const config: Config = {
         bg: {
           primary: 'var(--bg-primary)',
           secondary: 'var(--bg-secondary)',
-          tertiary: 'var(--bg-tertiary)',
-          surface: 'var(--bg-surface)',
+          inverse: 'var(--bg-inverse)',
           error: 'var(--bg-error)',
           success: 'var(--bg-success)',
           info: 'var(--bg-info)',
@@ -22,7 +21,6 @@ const config: Config = {
         text: {
           primary: 'var(--text-primary)',
           secondary: 'var(--text-secondary)',
-          muted: 'var(--text-muted)',
           inverse: 'var(--text-inverse)',
           error: 'var(--text-error)',
           success: 'var(--text-success)',
