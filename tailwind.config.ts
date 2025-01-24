@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderWidth:{
+        'thin': '0.5px',
+      },
       colors: {
         bg: {
           primary: 'var(--bg-primary)',

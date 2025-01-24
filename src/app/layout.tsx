@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 const interFont = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -19,9 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className={`${interFont.variable} antialiased`}>
-    {children}
-    </body>
+      <body className={`${interFont.variable} antialiased max-w-screen-xl mx-auto`}>
+        <Navbar/>
+        <main className="min-h-screen p-8">
+          {children}
+        </main>
+        <Footer/>
+      </body>
     </html>
   );
 }

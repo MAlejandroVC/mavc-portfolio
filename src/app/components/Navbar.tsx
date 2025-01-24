@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between p-4 border-4">
+    <nav className="w-full flex justify-between p-4 border-solid items-center">
       {/* Logo */}
       <div>
         <Link href="/">
@@ -40,7 +40,7 @@ const Navbar = () => {
             border-4 border-solid border-bg-inverse
             rounded-full
             `}
-          href="/about"
+          href="/about-page"
         >
           About Me
         </LinkButton>
@@ -51,7 +51,7 @@ const Navbar = () => {
             border-4 border-solid border-bg-inverse
             rounded-full
             `}
-          href="/ai-ml"
+          href="/ai-ml-page"
         >
           AI & ML
         </LinkButton>
@@ -62,7 +62,7 @@ const Navbar = () => {
             border-4 border-solid border-bg-inverse
             rounded-full
             `}
-          href="/algorithms"
+          href="/algorithms-page"
         >
           Algorithms
         </LinkButton>
@@ -73,9 +73,9 @@ const Navbar = () => {
         <ThemeToggle/>
         <LinkButton
           className={`
-            text-text-inverse hover:text-text-primary
-            bg-bg-inverse hover:bg-bg-primary
-            border-4 border-solid border-bg-inverse
+            text-text-primary
+            bg-accent-magenta
+            border-4 border-solid border-accent-magenta hover:border-bg-inverse
             rounded-full hover:rounded-none
             `}
           href="/pdf/CV_AlejandroVillalobos_ENG.pdf"

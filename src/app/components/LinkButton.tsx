@@ -1,11 +1,12 @@
 // LinkButton.tsx
-import React, { ReactNode, AnchorHTMLAttributes } from 'react';
+import React, { ReactNode } from 'react';
+import Link from 'next/link';
 
 type LinkButtonProps = {
   children: ReactNode;
   className?: string;
   href: string;
-} & AnchorHTMLAttributes<HTMLAnchorElement>;
+};
 
 const LinkButton: React.FC<LinkButtonProps> = ({
                                                  children,
@@ -14,16 +15,16 @@ const LinkButton: React.FC<LinkButtonProps> = ({
                                                  ...props
                                                }) => {
   return (
-    <a
+    <Link
       href={href}
       className={`
-        w-auto h-full flex justify-center items-center duration-500 px-6 py-4 transition-transform
+        w-auto h-full flex justify-center items-center duration-500 px-6 py-4 transition-transform font-bold uppercase
         ${className}
       `}
       {...props}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
