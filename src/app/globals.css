@@ -10,7 +10,7 @@
 }
 html, body {
   margin: 0;
-  padding: 16px;
+  padding: 0;
 }
 
 /* Base Styles */
@@ -34,9 +34,9 @@ a {
 }
 
 /* Debugging Borders */
-* {
-  border: 1px solid var(--border-default);
-}
+/** {*/
+/*  border: 1px solid var(--border-default);*/
+/*}*/
 
 /* Contextual Colors */
 :root {

@@ -2,48 +2,83 @@ import React from 'react';
 import LinkButton from './LinkButton';
 import Link from 'next/link';
 import ThemeToggle from "./ThemeToggle";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-dark text-light-base flex items-center justify-between p-4">
+    <nav className="w-full flex justify-between p-4 border-4">
       {/* Logo */}
-      <div className="text-xl font-bold">
+      <div>
         <Link href="/">
-          <img
+          <Image
             src="/logos/MAVC_white.png"
             alt="Alejandro Villalobos Logo"
-            className="h-10 w-auto cursor-pointer"
+            width={607}
+            height={161}
+            className="h-20
+            w-auto cursor-pointer
+            hidden lg:block"
+          />
+          <Image
+            src="/logos/MAVC_mini.png"
+            alt="Alejandro Villalobos Mini Logo"
+            width={161}
+            height={161}
+            className="h-20
+            w-auto cursor-pointer
+            block lg:hidden"
           />
         </Link>
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex">
-        <ThemeToggle/>
+      <div className="h-12 hidden md:flex">
         <LinkButton
-          className={'bg-bg-inverse text-text-inverse hover:bg-bg-primary hover:text-text-primary'}
+          className={`
+            text-text-inverse hover:text-text-primary
+            bg-bg-inverse hover:bg-bg-primary
+            border-4 border-solid border-bg-inverse
+            rounded-full
+            `}
           href="/about"
         >
-          About
+          About Me
         </LinkButton>
         <LinkButton
-          className={'bg-bg-inverse text-text-inverse hover:bg-bg-primary hover:text-text-primary'}
+          className={`
+            text-text-inverse hover:text-text-primary
+            bg-bg-inverse hover:bg-bg-primary
+            border-4 border-solid border-bg-inverse
+            rounded-full
+            `}
           href="/ai-ml"
         >
-          AI/ML
+          AI & ML
         </LinkButton>
         <LinkButton
-          className={'bg-bg-inverse text-text-inverse hover:bg-bg-primary hover:text-text-primary'}
+          className={`
+            text-text-inverse hover:text-text-primary
+            bg-bg-inverse hover:bg-bg-primary
+            border-4 border-solid border-bg-inverse
+            rounded-full
+            `}
           href="/algorithms"
         >
           Algorithms
         </LinkButton>
+      </div>
 
-        {/* Download Button */}
+      {/* Extra Buttons */}
+      <div className="flex h-12">
+        <ThemeToggle/>
         <LinkButton
-          className={'bg-accent-magenta text-text-inverse hover:bg-accent-magenta-vibrant'}
+          className={`
+            text-text-inverse hover:text-text-primary
+            bg-bg-inverse hover:bg-bg-primary
+            border-4 border-solid border-bg-inverse
+            rounded-full hover:rounded-none
+            `}
           href="/pdf/CV_AlejandroVillalobos_ENG.pdf"
-          retainShapeOnHover={false}
         >
           Download my CV
         </LinkButton>

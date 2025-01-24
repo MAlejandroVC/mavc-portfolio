@@ -4,14 +4,12 @@ import React, { ReactNode, AnchorHTMLAttributes } from 'react';
 type LinkButtonProps = {
   children: ReactNode;
   className?: string;
-  retainShapeOnHover?: boolean;
   href: string;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const LinkButton: React.FC<LinkButtonProps> = ({
                                                  children,
                                                  className = '',
-                                                 retainShapeOnHover = true,
                                                  href,
                                                  ...props
                                                }) => {
@@ -19,8 +17,8 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     <a
       href={href}
       className={`
-        w-full h-full flex justify-center items-center transition-colors duration-300
-        rounded-lg ${!retainShapeOnHover ? 'hover:rounded-none' : ''} ${className}
+        w-auto h-full flex justify-center items-center duration-500 px-6 py-4 transition-transform
+        ${className}
       `}
       {...props}
     >
