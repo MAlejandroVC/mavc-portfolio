@@ -22,9 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interFont.variable} antialiased max-w-screen-xl mx-auto`}>
+      <body className={`${interFont.variable} antialiased`}>
         <Navbar/>
-        <main className="min-h-screen p-8">
+        <main className="min-h-screen">
           {children}
         </main>
         <Footer/>

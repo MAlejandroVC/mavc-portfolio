@@ -5,8 +5,6 @@
 /* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
-  border-radius: 0; /* Sharp edges */
-  border: none; /* Remove borders by default */
 }
 html, body {
   margin: 0;
@@ -23,19 +21,11 @@ body {
   line-height: 1.5;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  display: grid; /* Strong grid structure */
-  grid-template-rows: auto; /* Explicit row control */
-  grid-template-columns: auto; /* Explicit column control */
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* Debugging Borders */
-* {
-  border: 2px var(--border-default);
 }
 
 /* Contextual Colors */
@@ -89,7 +79,7 @@ a {
   --text-info: #bfdbfe;
 
   --border-default: #555555;
-  --border-muted: #666666;
+  --border-muted: #444444;
   --border-error: #b91c1c;
   --border-success: #22c55e;
   --border-info: #38bdf8;
@@ -104,4 +94,10 @@ a {
   --accent-cyan-vibrant: #0b82a8;
   --accent-yellow: #a16207;
   --accent-yellow-vibrant: #fca311;
+}
+
+.mesh-background {
+  background-image: linear-gradient(to right, var(--border-muted) 1px, transparent 1px),
+                    linear-gradient(to bottom, var(--border-muted) 1px, transparent 1px);
+  background-size: 8px 8px; /* Grid cell size */
 }
