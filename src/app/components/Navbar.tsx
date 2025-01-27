@@ -1,5 +1,4 @@
 import React from 'react';
-import LinkButton from './LinkButton';
 import Link from 'next/link';
 import ThemeToggle from "./ThemeToggle";
 import Image from "next/image";
@@ -15,7 +14,7 @@ const Navbar = () => {
             alt="Alejandro Villalobos Logo"
             width={607}
             height={161}
-            className="h-20
+            className="max-h-20
             w-auto cursor-pointer
             hidden lg:block"
           />
@@ -24,7 +23,7 @@ const Navbar = () => {
             alt="Alejandro Villalobos Mini Logo"
             width={161}
             height={161}
-            className="h-20
+            className="max-h-20
             w-auto cursor-pointer
             block lg:hidden"
           />
@@ -32,56 +31,65 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="h-12 hidden md:flex">
-        <LinkButton
+      <div className="h-12 hidden xl:flex">
+        <Link
           className={`
             text-text-inverse hover:text-text-primary
             bg-bg-inverse hover:bg-bg-primary
             border-4 border-solid border-bg-inverse
-            rounded-full
+            rounded-full font-bold uppercase
+            w-auto h-full flex justify-center items-center px-6 py-4
+            duration-500 transition-transform
             `}
           href="/about-page"
         >
-          About Me
-        </LinkButton>
-        <LinkButton
+          <span>About Me</span>
+        </Link>
+        <Link
           className={`
             text-text-inverse hover:text-text-primary
             bg-bg-inverse hover:bg-bg-primary
             border-4 border-solid border-bg-inverse
-            rounded-full
+            rounded-full font-bold uppercase
+            w-auto h-full flex justify-center items-center px-6 py-4
+            duration-500 transition-transform
             `}
           href="/ai-ml-page"
         >
           AI & ML
-        </LinkButton>
-        <LinkButton
+        </Link>
+        <Link
           className={`
             text-text-inverse hover:text-text-primary
             bg-bg-inverse hover:bg-bg-primary
             border-4 border-solid border-bg-inverse
-            rounded-full
+            rounded-full font-bold uppercase
+            w-auto h-full flex justify-center items-center px-6 py-4
+            duration-500 transition-transform
             `}
           href="/algorithms-page"
         >
           Algorithms
-        </LinkButton>
+        </Link>
       </div>
 
       {/* Extra Buttons */}
       <div className="flex h-12">
         <ThemeToggle/>
-        <LinkButton
+        <a
           className={`
-            text-text-primary
-            bg-accent-magenta
-            border-4 border-solid border-accent-magenta hover:border-bg-inverse
-            rounded-full hover:rounded-none
+            text-text-primary hover:text-text-inverse
+            bg-accent-magenta hover:bg-bg-inverse
+            border-4 border-solid border-bg-inverse
+            rounded-full font-bold uppercase
+            w-full h-full flex justify-center items-center px-6 py-4
+            duration-500 transition-transform
             `}
           href="/pdf/CV_AlejandroVillalobos_ENG.pdf"
+          download
         >
           Download my CV
-        </LinkButton>
+        </a>
       </div>
     </nav>
   );
