@@ -44,7 +44,7 @@ const Navbar = () => {
             `}
             href="/about-page"
           >
-            <span>About Me</span>
+            About Me
           </Link>
           <Link
             className={`
@@ -80,8 +80,8 @@ const Navbar = () => {
           <a
             className={`
             text-text-primary hover:text-text-inverse
-            bg-accent-magenta hover:bg-accent-magenta-vibrant
-            border-2 border-solid border-accent-magenta
+            bg-accent-orange hover:bg-accent-orange-vibrant
+            border-2 border-solid border-accent-orange
             rounded-full font-bold uppercase
             w-full h-full flex justify-center items-center px-6 py-4
             duration-500 transition-transform
