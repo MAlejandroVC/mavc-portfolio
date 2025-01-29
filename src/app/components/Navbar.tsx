@@ -6,7 +6,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className="bg-bg-inverse">
-      <nav className="max-w-screen-xl mx-auto flex p-4 justify-between items-center border-x border-border-default">
+      <nav className="max-w-screen-xl mx-auto flex p-4 justify-between items-center">
         {/* Logo */}
         <div>
           <Link href="/">
@@ -15,7 +15,7 @@ const Navbar = () => {
               alt="Alejandro Villalobos Logo"
               width={590}
               height={161}
-              className="max-h-20
+              className="max-h-10
             w-auto cursor-pointer
             hidden lg:block"
             />
@@ -24,7 +24,7 @@ const Navbar = () => {
               alt="Alejandro Villalobos Mini Logo"
               width={161}
               height={161}
-              className="max-h-20
+              className="max-h-10
             w-auto cursor-pointer
             block lg:hidden"
             />
@@ -32,14 +32,14 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="h-12 hidden xl:flex">
+        <div className="hidden xl:flex">
           <Link
             className={`
             text-text-primary hover:text-text-inverse
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
-            w-auto h-full flex justify-center items-center px-6 py-4
+            w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
             href="/about-page"
@@ -52,7 +52,7 @@ const Navbar = () => {
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
-            w-auto h-full flex justify-center items-center px-6 py-4
+            w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
             href="/ai-ml-page"
@@ -65,7 +65,7 @@ const Navbar = () => {
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
-            w-auto h-full flex justify-center items-center px-6 py-4
+            w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
             href="/algorithms-page"
@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
 
         {/* Extra Buttons */}
-        <div className="flex h-12">
+        <div className="flex">
           <ThemeToggle/>
           <a
             className={`
@@ -83,7 +83,7 @@ const Navbar = () => {
             bg-accent-orange hover:bg-accent-orange-vibrant
             border-2 border-solid border-accent-orange
             rounded-full font-bold uppercase
-            w-full h-full flex justify-center items-center px-6 py-4
+            w-full h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
             href="/pdf/CV_AlejandroVillalobos_ENG.pdf"

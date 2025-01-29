@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${interFont.variable} antialiased`}>
         <Navbar/>
-        <main className="min-h-screen">
+        <main className="min-h-screen max-w-screen-xl mx-auto">
           {children}
         </main>
         <Footer/>
