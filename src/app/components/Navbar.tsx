@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="hidden xl:flex">
+        <div className="hidden xl:flex gap-x-4">
           <Link
             className={`
             text-text-primary hover:text-text-inverse
