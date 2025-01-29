@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,6 +109,7 @@ a {
 :root{
   /* Font Families */
   --font-sans: 'Inter', sans-serif;
+  --font-hero: 'Montserrat', sans-serif;
   --font-serif: 'Georgia', serif;
   --font-mono: 'Menlo', monospace;
 
@@ -143,6 +146,7 @@ a {
 }
 /* Reusable Typography Classes */
 .text-display {
+  font-family: var(--font-hero), sans-serif;
   font-size: var(--font-size-display);
   line-height: var(--line-height-display);
   font-weight: var(--font-weight-bold);

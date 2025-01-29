@@ -7,7 +7,7 @@ export default function Home() {
           Welcome to my web portfolio.
         </h1>
         <h2 className={`text-subtitle p-4 max-w-screen-xl mx-auto text-center`}>
-          I am Alejandro Villalobos and I am a software developer.
+          My name is Alejandro Villalobos and I&#39;m a software developer.
         </h2>
       </div>
 
