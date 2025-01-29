@@ -40,7 +40,7 @@ const Navbar = () => {
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
             w-auto h-full flex justify-center items-center px-6 py-4
-            duration-500 transition-transform
+            duration-200
             `}
             href="/about-page"
           >
@@ -53,7 +53,7 @@ const Navbar = () => {
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
             w-auto h-full flex justify-center items-center px-6 py-4
-            duration-500 transition-transform
+            duration-200
             `}
             href="/ai-ml-page"
           >
@@ -66,7 +66,7 @@ const Navbar = () => {
             border-2 border-solid border-bg-primary
             rounded-full font-bold uppercase
             w-auto h-full flex justify-center items-center px-6 py-4
-            duration-500 transition-transform
+            duration-200
             `}
             href="/algorithms-page"
           >
@@ -84,7 +84,7 @@ const Navbar = () => {
             border-2 border-solid border-accent-orange
             rounded-full font-bold uppercase
             w-full h-full flex justify-center items-center px-6 py-4
-            duration-500 transition-transform
+            duration-200
             `}
             href="/pdf/CV_AlejandroVillalobos_ENG.pdf"
             download
