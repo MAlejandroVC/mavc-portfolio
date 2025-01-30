@@ -114,7 +114,7 @@ a {
   --font-mono: 'Menlo', monospace;
 
   /* Font Sizes */
-  --font-size-display: 4rem; /* Large hero text */
+  --font-size-display: 5rem; /* Large hero text */
   --font-size-title-1: 2.25rem; /* Section headers */
   --font-size-title-2: 1.875rem; /* Subsection headers */
   --font-size-title-3: 1.5rem; /* Tertiary headers */
@@ -136,8 +136,8 @@ a {
 
   /* Font Weights */
   --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
 
   /* Letter Spacing */
   --letter-spacing-tight: -0.015em;
