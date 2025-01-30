@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-const interFont = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -21,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${interFont.variable} antialiased flex flex-col min-h-screen`}>
-        <Navbar/>
-        <main className={`flex-grow max-w-screen-xl mx-auto`}>
-          {children}
-        </main>
-        <Footer/>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={`antialiased flex flex-col min-h-screen`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar/>
+          <main className={`flex-grow max-w-screen-xl mx-auto`}>
+            {children}
+          </main>
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );

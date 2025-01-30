@@ -1,16 +1,37 @@
-import React from 'react';
-import Link from 'next/link';
+"use client";
+
+import React, {useEffect, useState} from "react";
+import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div className="bg-bg-inverse">
       <nav className="max-w-screen-xl mx-auto flex p-4 justify-between items-center">
         {/* Logo */}
-        <div >
+        <div>
           <Link href="/">
-            <Image src={"/logos/DuckyLogo.png"} alt={"Rubber Duck Logo"} height={50} width={83}/>
+            {mounted && (
+              <Image
+                src={
+                  theme === "light"
+                    ? "/logos/ducky-logo-light.png"
+                    : "/logos/ducky-logo-dark.png"
+                }
+                alt="Rubber Duck Logo"
+                height={50}
+                width={83}
+              />
+            )}
           </Link>
         </div>
 
@@ -59,7 +80,7 @@ const Navbar = () => {
 
         {/* Extra Buttons */}
         <div className="flex">
-          <ThemeToggle/>
+          <ThemeToggle />
           <a
             className={`
             text-text-primary hover:text-text-inverse

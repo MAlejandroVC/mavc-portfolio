@@ -1,43 +1,31 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
-    }
-    return 'light';
-  });
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [theme]);
+    setMounted(true);
+  }, []);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+  if (!mounted) return null; // Prevents hydration mismatch
 
   return (
-    <button onClick={toggleTheme} className='p-2 focus:outline-none'>
-      {theme === 'dark' ? (
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="p-2 focus:outline-none">
+      {theme === "dark" ? (
         <svg
-          width='24'
-          height='24'
-          viewBox='0 0 24 24'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           stroke="var(--bg-primary)"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="lucide lucide-moon-star"
         >
           <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9"/>
@@ -46,15 +34,15 @@ const ThemeToggle = () => {
         </svg>
       ) : (
         <svg
-          width='24'
-          height='24'
-          viewBox='0 0 24 24'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           stroke="var(--bg-primary)"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <circle cx="12" cy="12" r="4"/>
           <path d="M12 2v2"/>
