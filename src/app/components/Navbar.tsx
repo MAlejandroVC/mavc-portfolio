@@ -10,29 +10,12 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <Link href="/">
-            <Image
-              src="/logos/MAVC_white.png"
-              alt="Alejandro Villalobos Logo"
-              width={590}
-              height={161}
-              className="max-h-10
-            w-auto cursor-pointer
-            hidden lg:block"
-            />
-            <Image
-              src="/logos/MAVC_mini.png"
-              alt="Alejandro Villalobos Mini Logo"
-              width={161}
-              height={161}
-              className="max-h-10
-            w-auto cursor-pointer
-            block lg:hidden"
-            />
+            <Image src={"/logos/DuckyLogo.png"} alt={"Rubber Duck Logo"} height={50} width={83}/>
           </Link>
         </div>
 
         {/* Navigation Buttons */}
-        <div className="hidden xl:flex gap-x-4">
+        <div className="hidden lg:flex gap-x-4">
           <Link
             className={`
             text-text-primary hover:text-text-inverse
