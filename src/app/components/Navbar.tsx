@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="bg-bg-inverse">
       <nav className="max-w-screen-xl mx-auto flex p-4 justify-between items-center">
         {/* Logo */}
-        <div>
+        <div >
           <Link href="/">
             <Image src={"/logos/DuckyLogo.png"} alt={"Rubber Duck Logo"} height={50} width={83}/>
           </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
             text-text-primary hover:text-text-inverse
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
-            rounded-full font-bold uppercase
+            rounded-full font-bold text-button
             w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
@@ -34,7 +34,7 @@ const Navbar = () => {
             text-text-primary hover:text-text-inverse
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
-            rounded-full font-bold uppercase
+            rounded-full font-bold text-button
             w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
@@ -47,7 +47,7 @@ const Navbar = () => {
             text-text-primary hover:text-text-inverse
             bg-bg-primary hover:bg-bg-inverse
             border-2 border-solid border-bg-primary
-            rounded-full font-bold uppercase
+            rounded-full font-bold text-button
             w-auto h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
@@ -64,15 +64,15 @@ const Navbar = () => {
             className={`
             text-text-primary hover:text-text-inverse
             bg-accent-orange hover:bg-accent-orange-vibrant
-            border-2 border-solid border-accent-orange
-            rounded-full font-bold uppercase
+            border-2 border-solid border-accent-orange hover:border-bg-primary
+            rounded-full font-bold text-button
             w-full h-full flex justify-center items-center px-6 py-2
             duration-200
             `}
             href="/pdf/CV_AlejandroVillalobos_ENG.pdf"
             download
           >
-            Download my CV
+            My CV
           </a>
         </div>
       </nav>
