@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className={`bg-bg-inverse`}>
+    <footer className={`bg-bg-inverse mt-8`}>
       <div className={`max-w-screen-xl mx-auto p-4`}>
         <p className={`text-bg-secondary text-center`}>
           Thanks for stopping by :)
