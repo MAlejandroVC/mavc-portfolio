@@ -35,6 +35,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  background-color: var(--accent-orange); /* Custom color */
+  color: var(--text-primary);
+}
+
 /* Contextual Colors */
 :root {
   --bg-primary: #FFFCF2;

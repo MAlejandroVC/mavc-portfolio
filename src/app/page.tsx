@@ -43,7 +43,7 @@ export default function Home() {
         mx-8 xl:mx-0
       `}>
         {/* Software Development */}
-        <div className="min-h-[100px] bg-bg-secondary rounded-xl p-4 border-4">
+        <div className="min-h-[100px] bg-bg-secondary rounded-xl p-4 border-2">
           {/*Icon and title*/}
           <div className={`flex mb-4 items-center gap-2`}>
             <svg xmlns="http://www.w3.org/2000/svg"
