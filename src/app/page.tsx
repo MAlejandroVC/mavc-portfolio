@@ -164,11 +164,19 @@ export default function Home() {
           </ul>
         </div>
         {/*Easter Egg*/}
-        <a className="hidden md:block lg:hidden border-2 border-solid"></a>
+        <div className="hidden md:block lg:hidden p-6 my-auto">
+          <blockquote className={`border-l-8 border-solid border-accent-orange p-4`}>
+            <p className={`text-title-1`}>
+              “Life happens wherever you are, whether you make it or not.”
+            </p>
+            <footer className={`text-subtitle text-right`}>
+              Uncle Iroh
+            </footer>
+          </blockquote>
+        </div>
       </div>
 
-
-      {/* 3 sections */}
+      {/* Projects */}
       <div>
 
       </div>
