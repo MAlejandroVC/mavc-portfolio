@@ -91,7 +91,6 @@ const Navbar = () => {
             duration-200
             `}
             href="/pdf/CV_AlejandroVillalobos_ENG.pdf"
-            download
           >
             My CV
           </a>
