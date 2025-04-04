@@ -177,27 +177,27 @@ export default function Home() {
         </div>
       </div>
 
-      {/* My Projects */}
-      <div className={`py-12`}>
-        <h2 className={`mb-4 text-title-1 text-center`}>My Projects</h2>
-        <div className={`grid gap-8`}>
+      {/* My Projects TODO: Continue when the projects are done*/}
+      {/*<div className={`py-12`}>*/}
+      {/*  <h2 className={`mb-4 text-title-1 text-center`}>My Projects</h2>*/}
+      {/*  <div className={`grid gap-8`}>*/}
 
-        </div>
-        {/*AI and ML*/}
-        <div className={`grid grid-cols-1 lg:grid-cols-2 mx-8 gap-8`}>
-          <div className={`px-8 content-center`}>
-            <h2 className={`text-title-3 pb-4`}>Artificial Intelligence and Machine Learning</h2>
-            <p className={`text-body`}>
-              I think AI is pretty cool and these are some of the projects I&#39;ve worked on.
-              More text Ipsum Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-          <div className={`min-h-[300px] bg-bg-secondary rounded-xl`}>
-            test
-          </div>
-        </div>
+      {/*  </div>*/}
+      {/*  /!*AI and ML*!/*/}
+      {/*  <div className={`grid grid-cols-1 lg:grid-cols-2 mx-8 gap-8`}>*/}
+      {/*    <div className={`px-8 content-center`}>*/}
+      {/*      <h2 className={`text-title-3 pb-4`}>Artificial Intelligence and Machine Learning</h2>*/}
+      {/*      <p className={`text-body`}>*/}
+      {/*        I think AI is pretty cool and these are some of the projects I&#39;ve worked on.*/}
+      {/*        More text Ipsum Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.*/}
+      {/*      </p>*/}
+      {/*    </div>*/}
+      {/*    <div className={`min-h-[300px] bg-bg-secondary rounded-xl`}>*/}
+      {/*      test*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
 
-      </div>
+      {/*</div>*/}
 
     </div>
   );
