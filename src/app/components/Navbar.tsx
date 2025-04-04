@@ -35,48 +35,48 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Navigation Buttons */}
-        <div className="hidden lg:flex gap-x-4">
-          <Link
-            className={`
-            text-text-primary hover:text-text-inverse
-            bg-bg-primary hover:bg-bg-inverse
-            border-2 border-solid border-bg-primary
-            rounded-full font-bold text-button
-            w-auto h-full flex justify-center items-center px-6 py-2
-            duration-200
-            `}
-            href="/about-page"
-          >
-            About Me
-          </Link>
-          <Link
-            className={`
-            text-text-primary hover:text-text-inverse
-            bg-bg-primary hover:bg-bg-inverse
-            border-2 border-solid border-bg-primary
-            rounded-full font-bold text-button
-            w-auto h-full flex justify-center items-center px-6 py-2
-            duration-200
-            `}
-            href="/ai-ml-page"
-          >
-            AI & ML
-          </Link>
-          <Link
-            className={`
-            text-text-primary hover:text-text-inverse
-            bg-bg-primary hover:bg-bg-inverse
-            border-2 border-solid border-bg-primary
-            rounded-full font-bold text-button
-            w-auto h-full flex justify-center items-center px-6 py-2
-            duration-200
-            `}
-            href="/algorithms-page"
-          >
-            Algorithms
-          </Link>
-        </div>
+        {/* Navigation Buttons TODO: Uncomment when the other pages are done*/}
+        {/*<div className="hidden lg:flex gap-x-4">*/}
+        {/*  <Link*/}
+        {/*    className={`*/}
+        {/*    text-text-primary hover:text-text-inverse*/}
+        {/*    bg-bg-primary hover:bg-bg-inverse*/}
+        {/*    border-2 border-solid border-bg-primary*/}
+        {/*    rounded-full font-bold text-button*/}
+        {/*    w-auto h-full flex justify-center items-center px-6 py-2*/}
+        {/*    duration-200*/}
+        {/*    `}*/}
+        {/*    href="/about-page"*/}
+        {/*  >*/}
+        {/*    About Me*/}
+        {/*  </Link>*/}
+        {/*  <Link*/}
+        {/*    className={`*/}
+        {/*    text-text-primary hover:text-text-inverse*/}
+        {/*    bg-bg-primary hover:bg-bg-inverse*/}
+        {/*    border-2 border-solid border-bg-primary*/}
+        {/*    rounded-full font-bold text-button*/}
+        {/*    w-auto h-full flex justify-center items-center px-6 py-2*/}
+        {/*    duration-200*/}
+        {/*    `}*/}
+        {/*    href="/ai-ml-page"*/}
+        {/*  >*/}
+        {/*    AI & ML*/}
+        {/*  </Link>*/}
+        {/*  <Link*/}
+        {/*    className={`*/}
+        {/*    text-text-primary hover:text-text-inverse*/}
+        {/*    bg-bg-primary hover:bg-bg-inverse*/}
+        {/*    border-2 border-solid border-bg-primary*/}
+        {/*    rounded-full font-bold text-button*/}
+        {/*    w-auto h-full flex justify-center items-center px-6 py-2*/}
+        {/*    duration-200*/}
+        {/*    `}*/}
+        {/*    href="/algorithms-page"*/}
+        {/*  >*/}
+        {/*    Algorithms*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
 
         {/* Extra Buttons */}
         <div className="flex">
